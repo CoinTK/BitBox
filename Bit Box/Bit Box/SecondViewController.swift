@@ -1,8 +1,8 @@
 //
 //  SecondViewController.swift
-//  BitBox
+//  Bit Box
 //
-//  Created by Ashwin Aggarwal on 2/24/17.
+//  Created by Ashwin Aggarwal on 2/25/17.
 //  Copyright © 2017 CoinTK. All rights reserved.
 //
 

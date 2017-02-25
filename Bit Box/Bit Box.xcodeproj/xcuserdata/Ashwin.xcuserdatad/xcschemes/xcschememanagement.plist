@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BitBox.xcscheme</key>
+		<key>Bit Box.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CF50792C1E61484F00A61D83</key>
+		<key>CF6780A21E624450003335D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF5079421E61484F00A61D83</key>
+		<key>CF6780B81E624450003335D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF50794D1E61484F00A61D83</key>
+		<key>CF6780C31E624451003335D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,14 +1,14 @@
 //
-//  BitBoxUITests.swift
-//  BitBoxUITests
+//  Bit_BoxUITests.swift
+//  Bit BoxUITests
 //
-//  Created by Ashwin Aggarwal on 2/24/17.
+//  Created by Ashwin Aggarwal on 2/25/17.
 //  Copyright © 2017 CoinTK. All rights reserved.
 //
 
 import XCTest
 
-class BitBoxUITests: XCTestCase {
+class Bit_BoxUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

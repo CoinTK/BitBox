@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF50792C1E61484F00A61D83"
-               BuildableName = "BitBox.app"
-               BlueprintName = "BitBox"
-               ReferencedContainer = "container:BitBox.xcodeproj">
+               BlueprintIdentifier = "CF6780A21E624450003335D0"
+               BuildableName = "Bit Box.app"
+               BlueprintName = "Bit Box"
+               ReferencedContainer = "container:Bit Box.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF5079421E61484F00A61D83"
-               BuildableName = "BitBoxTests.xctest"
-               BlueprintName = "BitBoxTests"
-               ReferencedContainer = "container:BitBox.xcodeproj">
+               BlueprintIdentifier = "CF6780B81E624450003335D0"
+               BuildableName = "Bit BoxTests.xctest"
+               BlueprintName = "Bit BoxTests"
+               ReferencedContainer = "container:Bit Box.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF50794D1E61484F00A61D83"
-               BuildableName = "BitBoxUITests.xctest"
-               BlueprintName = "BitBoxUITests"
-               ReferencedContainer = "container:BitBox.xcodeproj">
+               BlueprintIdentifier = "CF6780C31E624451003335D0"
+               BuildableName = "Bit BoxUITests.xctest"
+               BlueprintName = "Bit BoxUITests"
+               ReferencedContainer = "container:Bit Box.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF50792C1E61484F00A61D83"
-            BuildableName = "BitBox.app"
-            BlueprintName = "BitBox"
-            ReferencedContainer = "container:BitBox.xcodeproj">
+            BlueprintIdentifier = "CF6780A21E624450003335D0"
+            BuildableName = "Bit Box.app"
+            BlueprintName = "Bit Box"
+            ReferencedContainer = "container:Bit Box.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF50792C1E61484F00A61D83"
-            BuildableName = "BitBox.app"
-            BlueprintName = "BitBox"
-            ReferencedContainer = "container:BitBox.xcodeproj">
+            BlueprintIdentifier = "CF6780A21E624450003335D0"
+            BuildableName = "Bit Box.app"
+            BlueprintName = "Bit Box"
+            ReferencedContainer = "container:Bit Box.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF50792C1E61484F00A61D83"
-            BuildableName = "BitBox.app"
-            BlueprintName = "BitBox"
-            ReferencedContainer = "container:BitBox.xcodeproj">
+            BlueprintIdentifier = "CF6780A21E624450003335D0"
+            BuildableName = "Bit Box.app"
+            BlueprintName = "Bit Box"
+            ReferencedContainer = "container:Bit Box.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
