@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CF5079311E61484F00A61D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079301E61484F00A61D83 /* AppDelegate.swift */; };
-		CF5079331E61484F00A61D83 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079321E61484F00A61D83 /* FirstViewController.swift */; };
+		CF5079331E61484F00A61D83 /* LiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079321E61484F00A61D83 /* LiveController.swift */; };
 		CF5079351E61484F00A61D83 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079341E61484F00A61D83 /* SecondViewController.swift */; };
 		CF5079381E61484F00A61D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5079361E61484F00A61D83 /* Main.storyboard */; };
 		CF50793A1E61484F00A61D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5079391E61484F00A61D83 /* Assets.xcassets */; };
 		CF50793D1E61484F00A61D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF50793B1E61484F00A61D83 /* LaunchScreen.storyboard */; };
 		CF5079481E61484F00A61D83 /* BitBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079471E61484F00A61D83 /* BitBoxTests.swift */; };
 		CF5079531E61484F00A61D83 /* BitBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079521E61484F00A61D83 /* BitBoxUITests.swift */; };
+		CF5079631E614EDB00A61D83 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079621E614EDB00A61D83 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		CF50792D1E61484F00A61D83 /* BitBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5079301E61484F00A61D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF5079321E61484F00A61D83 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CF5079321E61484F00A61D83 /* LiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveController.swift; sourceTree = "<group>"; };
 		CF5079341E61484F00A61D83 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CF5079371E61484F00A61D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF5079391E61484F00A61D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		CF50794E1E61484F00A61D83 /* BitBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5079521E61484F00A61D83 /* BitBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBoxUITests.swift; sourceTree = "<group>"; };
 		CF5079541E61484F00A61D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5079621E614EDB00A61D83 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				CF5079301E61484F00A61D83 /* AppDelegate.swift */,
-				CF5079321E61484F00A61D83 /* FirstViewController.swift */,
 				CF5079341E61484F00A61D83 /* SecondViewController.swift */,
+				CF5079321E61484F00A61D83 /* LiveController.swift */,
 				CF5079361E61484F00A61D83 /* Main.storyboard */,
+				CF5079621E614EDB00A61D83 /* GraphView.swift */,
 				CF5079391E61484F00A61D83 /* Assets.xcassets */,
 				CF50793B1E61484F00A61D83 /* LaunchScreen.storyboard */,
 				CF50793E1E61484F00A61D83 /* Info.plist */,
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5079631E614EDB00A61D83 /* GraphView.swift in Sources */,
 				CF5079351E61484F00A61D83 /* SecondViewController.swift in Sources */,
 				CF5079311E61484F00A61D83 /* AppDelegate.swift in Sources */,
-				CF5079331E61484F00A61D83 /* FirstViewController.swift in Sources */,
+				CF5079331E61484F00A61D83 /* LiveController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
