@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF5078F71E6147C900A61D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5078F61E6147C900A61D83 /* AppDelegate.swift */; };
+		CF5078F91E6147C900A61D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5078F81E6147C900A61D83 /* ViewController.swift */; };
+		CF5078FC1E6147C900A61D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5078FA1E6147C900A61D83 /* Main.storyboard */; };
+		CF5078FE1E6147C900A61D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5078FD1E6147C900A61D83 /* Assets.xcassets */; };
+		CF5079011E6147C900A61D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5078FF1E6147C900A61D83 /* LaunchScreen.storyboard */; };
+		CF50790C1E6147C900A61D83 /* BitBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50790B1E6147C900A61D83 /* BitBoxTests.swift */; };
+		CF5079171E6147C900A61D83 /* BitBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079161E6147C900A61D83 /* BitBoxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF5079081E6147C900A61D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF5078EB1E6147C900A61D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5078F21E6147C900A61D83;
+			remoteInfo = BitBox;
+		};
+		CF5079131E6147C900A61D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF5078EB1E6147C900A61D83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5078F21E6147C900A61D83;
+			remoteInfo = BitBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF5078F31E6147C900A61D83 /* BitBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5078F61E6147C900A61D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF5078F81E6147C900A61D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF5078FB1E6147C900A61D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF5078FD1E6147C900A61D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF5079001E6147C900A61D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF5079021E6147C900A61D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5079071E6147C900A61D83 /* BitBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF50790B1E6147C900A61D83 /* BitBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBoxTests.swift; sourceTree = "<group>"; };
+		CF50790D1E6147C900A61D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5079121E6147C900A61D83 /* BitBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5079161E6147C900A61D83 /* BitBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBoxUITests.swift; sourceTree = "<group>"; };
+		CF5079181E6147C900A61D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF5078F01E6147C900A61D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5079041E6147C900A61D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF50790F1E6147C900A61D83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF5078EA1E6147C900A61D83 = {
+			isa = PBXGroup;
+			children = (
+				CF5078F51E6147C900A61D83 /* BitBox */,
+				CF50790A1E6147C900A61D83 /* BitBoxTests */,
+				CF5079151E6147C900A61D83 /* BitBoxUITests */,
+				CF5078F41E6147C900A61D83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF5078F41E6147C900A61D83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF5078F31E6147C900A61D83 /* BitBox.app */,
+				CF5079071E6147C900A61D83 /* BitBoxTests.xctest */,
+				CF5079121E6147C900A61D83 /* BitBoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF5078F51E6147C900A61D83 /* BitBox */ = {
+			isa = PBXGroup;
+			children = (
+				CF5078F61E6147C900A61D83 /* AppDelegate.swift */,
+				CF5078F81E6147C900A61D83 /* ViewController.swift */,
+				CF5078FA1E6147C900A61D83 /* Main.storyboard */,
+				CF5078FD1E6147C900A61D83 /* Assets.xcassets */,
+				CF5078FF1E6147C900A61D83 /* LaunchScreen.storyboard */,
+				CF5079021E6147C900A61D83 /* Info.plist */,
+			);
+			path = BitBox;
+			sourceTree = "<group>";
+		};
+		CF50790A1E6147C900A61D83 /* BitBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF50790B1E6147C900A61D83 /* BitBoxTests.swift */,
+				CF50790D1E6147C900A61D83 /* Info.plist */,
+			);
+			path = BitBoxTests;
+			sourceTree = "<group>";
+		};
+		CF5079151E6147C900A61D83 /* BitBoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF5079161E6147C900A61D83 /* BitBoxUITests.swift */,
+				CF5079181E6147C900A61D83 /* Info.plist */,
+			);
+			path = BitBoxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF5078F21E6147C900A61D83 /* BitBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF50791B1E6147C900A61D83 /* Build configuration list for PBXNativeTarget "BitBox" */;
+			buildPhases = (
+				CF5078EF1E6147C900A61D83 /* Sources */,
+				CF5078F01E6147C900A61D83 /* Frameworks */,
+				CF5078F11E6147C900A61D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitBox;
+			productName = BitBox;
+			productReference = CF5078F31E6147C900A61D83 /* BitBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF5079061E6147C900A61D83 /* BitBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF50791E1E6147C900A61D83 /* Build configuration list for PBXNativeTarget "BitBoxTests" */;
+			buildPhases = (
+				CF5079031E6147C900A61D83 /* Sources */,
+				CF5079041E6147C900A61D83 /* Frameworks */,
+				CF5079051E6147C900A61D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF5079091E6147C900A61D83 /* PBXTargetDependency */,
+			);
+			name = BitBoxTests;
+			productName = BitBoxTests;
+			productReference = CF5079071E6147C900A61D83 /* BitBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF5079111E6147C900A61D83 /* BitBoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5079211E6147C900A61D83 /* Build configuration list for PBXNativeTarget "BitBoxUITests" */;
+			buildPhases = (
+				CF50790E1E6147C900A61D83 /* Sources */,
+				CF50790F1E6147C900A61D83 /* Frameworks */,
+				CF5079101E6147C900A61D83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF5079141E6147C900A61D83 /* PBXTargetDependency */,
+			);
+			name = BitBoxUITests;
+			productName = BitBoxUITests;
+			productReference = CF5079121E6147C900A61D83 /* BitBoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF5078EB1E6147C900A61D83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ashwin Aggarwal";
+				TargetAttributes = {
+					CF5078F21E6147C900A61D83 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					CF5079061E6147C900A61D83 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF5078F21E6147C900A61D83;
+					};
+					CF5079111E6147C900A61D83 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF5078F21E6147C900A61D83;
+					};
+				};
+			};
+			buildConfigurationList = CF5078EE1E6147C900A61D83 /* Build configuration list for PBXProject "BitBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF5078EA1E6147C900A61D83;
+			productRefGroup = CF5078F41E6147C900A61D83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF5078F21E6147C900A61D83 /* BitBox */,
+				CF5079061E6147C900A61D83 /* BitBoxTests */,
+				CF5079111E6147C900A61D83 /* BitBoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF5078F11E6147C900A61D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5079011E6147C900A61D83 /* LaunchScreen.storyboard in Resources */,
+				CF5078FE1E6147C900A61D83 /* Assets.xcassets in Resources */,
+				CF5078FC1E6147C900A61D83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5079051E6147C900A61D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5079101E6147C900A61D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF5078EF1E6147C900A61D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5078F91E6147C900A61D83 /* ViewController.swift in Sources */,
+				CF5078F71E6147C900A61D83 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5079031E6147C900A61D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF50790C1E6147C900A61D83 /* BitBoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF50790E1E6147C900A61D83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5079171E6147C900A61D83 /* BitBoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF5079091E6147C900A61D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF5078F21E6147C900A61D83 /* BitBox */;
+			targetProxy = CF5079081E6147C900A61D83 /* PBXContainerItemProxy */;
+		};
+		CF5079141E6147C900A61D83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF5078F21E6147C900A61D83 /* BitBox */;
+			targetProxy = CF5079131E6147C900A61D83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF5078FA1E6147C900A61D83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5078FB1E6147C900A61D83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF5078FF1E6147C900A61D83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5079001E6147C900A61D83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF5079191E6147C900A61D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF50791A1E6147C900A61D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF50791C1E6147C900A61D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BitBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AshwinAggarwal.BitBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CF50791D1E6147C900A61D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BitBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AshwinAggarwal.BitBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CF50791F1E6147C900A61D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BitBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AshwinAggarwal.BitBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitBox.app/BitBox";
+			};
+			name = Debug;
+		};
+		CF5079201E6147C900A61D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BitBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AshwinAggarwal.BitBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitBox.app/BitBox";
+			};
+			name = Release;
+		};
+		CF5079221E6147C900A61D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BitBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AshwinAggarwal.BitBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BitBox;
+			};
+			name = Debug;
+		};
+		CF5079231E6147C900A61D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BitBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AshwinAggarwal.BitBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BitBox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF5078EE1E6147C900A61D83 /* Build configuration list for PBXProject "BitBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5079191E6147C900A61D83 /* Debug */,
+				CF50791A1E6147C900A61D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF50791B1E6147C900A61D83 /* Build configuration list for PBXNativeTarget "BitBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF50791C1E6147C900A61D83 /* Debug */,
+				CF50791D1E6147C900A61D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF50791E1E6147C900A61D83 /* Build configuration list for PBXNativeTarget "BitBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF50791F1E6147C900A61D83 /* Debug */,
+				CF5079201E6147C900A61D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF5079211E6147C900A61D83 /* Build configuration list for PBXNativeTarget "BitBoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5079221E6147C900A61D83 /* Debug */,
+				CF5079231E6147C900A61D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF5078EB1E6147C900A61D83 /* Project object */;
+}
