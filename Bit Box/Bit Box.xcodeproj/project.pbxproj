@@ -20,9 +20,9 @@
 		CF6780E51E624494003335D0 /* QueriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6780E41E624494003335D0 /* QueriesViewController.swift */; };
 		CF6780E71E624499003335D0 /* QueriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6780E61E624499003335D0 /* QueriesTableViewCell.swift */; };
 		CF6780E91E6244B3003335D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6780E81E6244B3003335D0 /* Assets.xcassets */; };
-		CF6780EC1E624505003335D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6780EA1E624505003335D0 /* LaunchScreen.storyboard */; };
 		CF6780F31E6247BB003335D0 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6780F21E6247BB003335D0 /* list.png */; };
 		CF6780F51E624B52003335D0 /* linechart.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6780F41E624B52003335D0 /* linechart.png */; };
+		CF6780F71E624D52003335D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6780F61E624D52003335D0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +61,9 @@
 		CF6780E41E624494003335D0 /* QueriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueriesViewController.swift; sourceTree = "<group>"; };
 		CF6780E61E624499003335D0 /* QueriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueriesTableViewCell.swift; sourceTree = "<group>"; };
 		CF6780E81E6244B3003335D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF6780EB1E624505003335D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6780F21E6247BB003335D0 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		CF6780F41E624B52003335D0 /* linechart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linechart.png; sourceTree = "<group>"; };
+		CF6780F61E624D52003335D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +122,12 @@
 				CF6780DA1E62446F003335D0 /* Info.plist */,
 				CF6780DC1E624473003335D0 /* LiveController.swift */,
 				CF6780DE1E624476003335D0 /* Main.storyboard */,
+				CF6780F61E624D52003335D0 /* LaunchScreen.storyboard */,
 				CF6780E61E624499003335D0 /* QueriesTableViewCell.swift */,
 				CF6780E01E624486003335D0 /* PredictionGraphView.swift */,
 				CF6780E41E624494003335D0 /* QueriesViewController.swift */,
 				CF6780E21E62448B003335D0 /* QueriesDetailViewController.swift */,
 				CF6780E81E6244B3003335D0 /* Assets.xcassets */,
-				CF6780EA1E624505003335D0 /* LaunchScreen.storyboard */,
 			);
 			path = "Bit Box";
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 				CF6780F51E624B52003335D0 /* linechart.png in Resources */,
 				CF6780DB1E62446F003335D0 /* Info.plist in Resources */,
 				CF6780F31E6247BB003335D0 /* list.png in Resources */,
-				CF6780EC1E624505003335D0 /* LaunchScreen.storyboard in Resources */,
+				CF6780F71E624D52003335D0 /* LaunchScreen.storyboard in Resources */,
 				CF6780DF1E624476003335D0 /* Main.storyboard in Resources */,
 				CF6780E91E6244B3003335D0 /* Assets.xcassets in Resources */,
 			);
@@ -336,17 +336,6 @@
 			targetProxy = CF6780C51E624451003335D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CF6780EA1E624505003335D0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF6780EB1E624505003335D0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CF6780CB1E624451003335D0 /* Debug */ = {
