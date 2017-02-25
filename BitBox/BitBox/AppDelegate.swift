@@ -3,7 +3,7 @@
 //  BitBox
 //
 //  Created by Ashwin Aggarwal on 2/24/17.
-//  Copyright © 2017 Ashwin Aggarwal. All rights reserved.
+//  Copyright © 2017 CoinTK. All rights reserved.
 //
 
 import UIKit
