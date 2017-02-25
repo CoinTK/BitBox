@@ -11,16 +11,19 @@ import UIKit
 
 
 @IBDesignable class GraphView: UIView {
-    
+        
         //Weekly sample data
-        var graphPoints:[Int] = [4, 2, 6, 4, 5, 8, 3]
-
+        var graphPoints:[Int] = []
+        let api = ""
     
         //1 - the properties for the gradient
         @IBInspectable var startColor: UIColor = UIColor.red
         @IBInspectable var endColor: UIColor = UIColor.green
         
         override func draw(_ rect: CGRect) {
+            getJson(url: api)
+            
+            
             let width = rect.width
             let height = rect.height
             
@@ -98,6 +101,35 @@ import UIKit
             }
             
             graphPath.stroke()
+            
+            //Draw horizontal graph lines on the top of everything
+            var linePath = UIBezierPath()
+            
+            //top line
+            linePath.move(to: CGPoint(x:margin, y: topBorder))
+            linePath.addLine(to: CGPoint(x: width - margin,
+                                            y:topBorder))
+            
+            //center line
+            linePath.move(to: CGPoint(x:margin,
+                                         y: graphHeight/2 + topBorder))
+            linePath.addLine(to: CGPoint(x:width - margin,
+                                            y:graphHeight/2 + topBorder))
+            
+            //bottom line
+            linePath.move(to: CGPoint(x:margin,
+                                         y:height - bottomBorder))
+            linePath.addLine(to: CGPoint(x:width - margin,
+                                            y:height - bottomBorder))
+            let color = UIColor(white: 1.0, alpha: 0.3)
+            color.setStroke()
+            
+            linePath.lineWidth = 1.0
+            linePath.stroke()
+        }
+    
+        func getJson(url: String) {
+        
         }
 
 }

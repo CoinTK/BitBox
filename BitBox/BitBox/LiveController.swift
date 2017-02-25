@@ -12,8 +12,12 @@ class LiveController: UIViewController {
 
     @IBOutlet weak var graphView: GraphView!
     
+    @IBOutlet weak var priceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        priceLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+
     }
     
     override func didReceiveMemoryWarning() {
