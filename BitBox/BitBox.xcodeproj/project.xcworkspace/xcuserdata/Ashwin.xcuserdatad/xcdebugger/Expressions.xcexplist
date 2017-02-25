@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LiveController.setupGraphDisplay() -&gt; ():LiveController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "predictionGraphView.graphPoints.max()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

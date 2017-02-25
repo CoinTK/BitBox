@@ -16,6 +16,8 @@
 		CF5079481E61484F00A61D83 /* BitBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079471E61484F00A61D83 /* BitBoxTests.swift */; };
 		CF5079531E61484F00A61D83 /* BitBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079521E61484F00A61D83 /* BitBoxUITests.swift */; };
 		CF5079631E614EDB00A61D83 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079621E614EDB00A61D83 /* GraphView.swift */; };
+		CF5079681E61D62200A61D83 /* Line Chart-30.png in Resources */ = {isa = PBXBuildFile; fileRef = CF5079671E61D62200A61D83 /* Line Chart-30.png */; };
+		CF50796A1E61DADD00A61D83 /* PredictionGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5079691E61DADD00A61D83 /* PredictionGraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		CF5079521E61484F00A61D83 /* BitBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBoxUITests.swift; sourceTree = "<group>"; };
 		CF5079541E61484F00A61D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF5079621E614EDB00A61D83 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		CF5079671E61D62200A61D83 /* Line Chart-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Line Chart-30.png"; path = "../../../../../Downloads/Line Chart-30.png"; sourceTree = "<group>"; };
+		CF5079691E61DADD00A61D83 /* PredictionGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionGraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,9 @@
 				CF5079341E61484F00A61D83 /* SecondViewController.swift */,
 				CF5079321E61484F00A61D83 /* LiveController.swift */,
 				CF5079361E61484F00A61D83 /* Main.storyboard */,
+				CF5079691E61DADD00A61D83 /* PredictionGraphView.swift */,
 				CF5079621E614EDB00A61D83 /* GraphView.swift */,
+				CF5079641E61D5A600A61D83 /* Resources */,
 				CF5079391E61484F00A61D83 /* Assets.xcassets */,
 				CF50793B1E61484F00A61D83 /* LaunchScreen.storyboard */,
 				CF50793E1E61484F00A61D83 /* Info.plist */,
@@ -129,6 +135,14 @@
 				CF5079541E61484F00A61D83 /* Info.plist */,
 			);
 			path = BitBoxUITests;
+			sourceTree = "<group>";
+		};
+		CF5079641E61D5A600A61D83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF5079671E61D62200A61D83 /* Line Chart-30.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +254,7 @@
 			files = (
 				CF50793D1E61484F00A61D83 /* LaunchScreen.storyboard in Resources */,
 				CF50793A1E61484F00A61D83 /* Assets.xcassets in Resources */,
+				CF5079681E61D62200A61D83 /* Line Chart-30.png in Resources */,
 				CF5079381E61484F00A61D83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +284,7 @@
 				CF5079351E61484F00A61D83 /* SecondViewController.swift in Sources */,
 				CF5079311E61484F00A61D83 /* AppDelegate.swift in Sources */,
 				CF5079331E61484F00A61D83 /* LiveController.swift in Sources */,
+				CF50796A1E61DADD00A61D83 /* PredictionGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +529,7 @@
 				CF5079591E61484F00A61D83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF50795A1E61484F00A61D83 /* Build configuration list for PBXNativeTarget "BitBoxTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +538,7 @@
 				CF50795C1E61484F00A61D83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF50795D1E61484F00A61D83 /* Build configuration list for PBXNativeTarget "BitBoxUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +547,7 @@
 				CF50795F1E61484F00A61D83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

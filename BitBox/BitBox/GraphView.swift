@@ -13,7 +13,8 @@ import UIKit
 @IBDesignable class GraphView: UIView {
         
         //Weekly sample data
-        var graphPoints:[Int] = []
+        var graphPoints:[Int] = [1, 2, 3, 10, 5, 2]
+        // normal points
         let api = ""
     
         //1 - the properties for the gradient
@@ -103,7 +104,7 @@ import UIKit
             graphPath.stroke()
             
             //Draw horizontal graph lines on the top of everything
-            var linePath = UIBezierPath()
+            let linePath = UIBezierPath()
             
             //top line
             linePath.move(to: CGPoint(x:margin, y: topBorder))
