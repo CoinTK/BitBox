@@ -74,7 +74,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Live" image="Line Chart-30.png" selectedImage="chart.png" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Live" image="linechart.png" selectedImage="linechart.png" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="graphView" destination="LUM-Wa-5Xs" id="Pnm-eU-uVi"/>
                         <outlet property="maxPT" destination="Pn2-Mv-H7j" id="IHb-iF-f3h"/>
@@ -226,7 +226,7 @@
         <scene sceneID="cr0-ew-R2U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gfU-ef-nNn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Queries" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Queries" image="list.png" selectedImage="list.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cfy-tl-0YG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -244,8 +244,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Line Chart-30.png" width="30" height="30"/>
-        <image name="chart.png" width="50" height="50"/>
-        <image name="second" width="30" height="30"/>
+        <image name="linechart.png" width="30" height="30"/>
+        <image name="list.png" width="30" height="30"/>
     </resources>
 </document>
