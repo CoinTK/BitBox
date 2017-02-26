@@ -10,10 +10,11 @@ BitBox APP is an iOS APP integrated with the [BitBox-Server](https://github.com/
 
 The APP is fully functional and should compile on most systems without issues.
 
-
-<img src='https://github.com/CoinTK/BitBox/blob/master/icon.png' width='256'>
-<img src='https://github.com/CoinTK/BitBox/blob/master/screenshot1.png' width='256'>
-<img src='https://github.com/CoinTK/BitBox/blob/master/screenshot2.png' width='256'>
+<p align="center">
+	<img src='https://github.com/CoinTK/BitBox/blob/master/icon.png' width='256'>
+</p>
+<img src='https://github.com/CoinTK/BitBox/blob/master/screenshot1.png' width='350'>
+<img src='https://github.com/CoinTK/BitBox/blob/master/screenshot2.png' width='350'>
 
 
 # Requirements
