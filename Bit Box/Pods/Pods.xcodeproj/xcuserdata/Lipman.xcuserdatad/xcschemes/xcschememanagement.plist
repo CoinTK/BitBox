@@ -9,15 +9,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftCharts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2600C95BEAAFF6E779A003396F1F73E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB69C1B1438941697A9F9FB977ED2FED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
