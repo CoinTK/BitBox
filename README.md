@@ -8,9 +8,9 @@
 
 # Description
 
-BitBox APP is an iOS App integrated with the [BitBox-Server](https://github.com/CoinTK/BitBox-Server) and [CoinTK](https://github.com/CoinTK/CoinTK) python scripts with fancy visualization tools.
+BitBox App is an iOS App integrated with the [BitBox-Server](https://github.com/CoinTK/BitBox-Server) and [CoinTK](https://github.com/CoinTK/CoinTK) python scripts with fancy visualization tools.
 
-The App is fully functional and should compile on most systems without issues.
+The App is fully functional and should compile on most systems without issues. The web server (BitBox-Server) must be running in order to visualize each strategy.
 
 
 
@@ -20,8 +20,6 @@ The App is fully functional and should compile on most systems without issues.
 
 # Requirements
 
-WIP
+- XCode 8.2.1
 
-# Cocoa Pods
 
-WIP
