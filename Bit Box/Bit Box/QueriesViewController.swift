@@ -10,9 +10,11 @@ import UIKit
 
 class QueriesViewController: UITableViewController {
     
-    var names : [String] = ["Naive", "Reverse Naive"]
+    var names : [String] = []
+    var ids : [Int] = []
     
     
+    let api = "http://52.41.80.130/api/backtests/list"
     @IBOutlet weak var table: UITableView!
     
     override func viewDidLoad() {
@@ -20,6 +22,11 @@ class QueriesViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.table.delegate = self
         self.table.dataSource = self
+        getJSON(url: api)
+        for i in 0..<names.count {
+            ids.append(i)
+        }
+        
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         table.reloadData()
@@ -61,42 +68,23 @@ class QueriesViewController: UITableViewController {
         {
             
             destination.sentName = names[detailIndex]
+            destination.sentID = ids[detailIndex]
         }
     }
-    //    func getJSON(urlAddress : String)
-//    {
-//        // Asynchronous Http call to your api url, using NSURLSession:
-//        guard let url = URL(string: urlAddress) else
-//        {
-//            print("Url conversion issue.")
-//            return
-//        }
-//        // task
-//        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
-//            if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
-//                if let related_topics_array = jsonObj?.value(forKey: "RelatedTopics") as? NSArray {
-//                    for topic in related_topics_array {
-//                        if let topicDict = topic as? NSDictionary {
-//                            if let firsturl = topicDict.value(forKey: "FirstURL") { // usernames
-//                                self.firsturls.append(firsturl as! String)
-//                            }
-//                            if let text = topicDict.value(forKey: "Text") {
-//                                self.texts.append(text as! String)
-//                            }
-//                            
-//                            // get back to main thread before reloading
-//                            OperationQueue.main.addOperation ({
-//                                self.table.reloadData()
-//                            })
-//                        }
-//                    }
-//                }
-//                
-//                
-//            }
-//        }).resume()
-//    }
-
-
+    
+    func getJSON(url: String) {
+        let data: NSData = try! NSData(contentsOf: NSURL(string: url) as! URL);
+        if let jsonObj = try? JSONSerialization.jsonObject(with: data as Data, options: .allowFragments) as? NSArray {
+            let list_array = jsonObj as? [[String: Any]]
+            for listitem in list_array! {
+                if let itemsDict = listitem as? NSDictionary {
+                    if let name  = itemsDict.value(forKey: "name") {
+                        self.names.append(name as! String)
+                    }
+                }
+            }
+            
+        }
+    }
 }
 
