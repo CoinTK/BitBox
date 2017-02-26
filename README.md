@@ -1,5 +1,5 @@
 #######
-# Bit Box v1.0
+# Bit Box APP v1.0
 #######
 
 <p align="center">
