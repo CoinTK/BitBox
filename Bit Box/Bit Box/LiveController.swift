@@ -35,37 +35,9 @@ class LiveController: UIViewController {
     
 
     func getJson(url: String, timeFrame: Int) -> [[Int]]{
-        guard let url = URL(string: url) else
-        {
-            print("Url conversion issue.")
-            return []
-        }
-        // task
-        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
-            if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
-                if let related_topics_array = jsonObj?.value(forKey: "data") as? NSArray {
-                    for topic in related_topics_array {
-                        if let topicDict = topic as? NSDictionary {
-                            if let worth = topicDict.value(forKey: "worth") { // usernames
-                                self.firsturls.append(firsturl as! String)
-                            }
-                            if let text = topicDict.value(forKey: "Text") {
-                                self.texts.append(text as! String)
-                            }
-                            
-                            // get back to main thread before reloading
-                            OperationQueue.main.addOperation ({
-                                self.table.reloadData()
-                            })
-                        }
-                    }
-                }
-                
-                
-            }
-        }).resume()
-        
-        let graphPoints:[[Int]] = []
+
+        let size:Int = Int(arc4random_uniform(20) + 1)
+        let graphPoints:[[Int]] = [(makeList(n:size).sorted()), makeList(n: size)]
         return graphPoints
     }
 
