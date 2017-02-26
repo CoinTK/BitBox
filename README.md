@@ -20,8 +20,5 @@ The App is fully functional and should compile on most systems without issues.
 
 # Requirements
 
-WIP
-
-# Cocoa Pods
-
+Cocoa Pods (?)
 WIP
