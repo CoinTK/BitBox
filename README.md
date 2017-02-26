@@ -1,5 +1,5 @@
 #######
-# Bit Box APP v1.0
+# Bit Box App v1.0
 #######
 
 <p align="center">
@@ -8,9 +8,9 @@
 
 # Description
 
-BitBox APP is an iOS APP integrated with the [BitBox-Server](https://github.com/CoinTK/BitBox-Server) and [CoinTK](https://github.com/CoinTK/CoinTK) python scripts with fancy visualization tools.
+BitBox APP is an iOS App integrated with the [BitBox-Server](https://github.com/CoinTK/BitBox-Server) and [CoinTK](https://github.com/CoinTK/CoinTK) python scripts with fancy visualization tools.
 
-The APP is fully functional and should compile on most systems without issues.
+The App is fully functional and should compile on most systems without issues.
 
 
 
