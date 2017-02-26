@@ -10,6 +10,8 @@
 
 BitBox APP is an iOS App integrated with the [BitBox-Server](https://github.com/CoinTK/BitBox-Server) and [CoinTK](https://github.com/CoinTK/CoinTK) python scripts with fancy visualization tools.
 
+BitBox keeps humans in the loop by providing them with the analysis and visualizations they need to make informed decisions about the trading algorithms they use.
+
 The app is functional and should compile on most systems without issues.
 
 
