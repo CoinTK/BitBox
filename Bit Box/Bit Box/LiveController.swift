@@ -41,6 +41,11 @@ class LiveController: UIViewController {
     }
 
     func getJson(url: String, timeFrame: Int) -> [[Int]]{
+        let data: NSData = NSData(contentsOf: NSURL(string: "http://52.41.80.130/api/backtests/results/trade?id=0&page=2&page_size=10&start_ts=0&end_ts=2481003761") as! URL) ?? [])
+        if let jsonObj = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? NSDictionary {
+            if let 
+        }
+        let maxPage = data
         let size:Int = Int(arc4random_uniform(20) + 1)
         let graphPoints:[[Int]] = [(makeList(n:size).sorted()), makeList(n: size)]
         return graphPoints
