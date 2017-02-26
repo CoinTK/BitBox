@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUM-Wa-5Xs" customClass="GraphView" customModule="Bit_Box" customModuleProvider="target">
-                                <rect key="frame" x="47" y="194" width="300" height="250"/>
+                                <rect key="frame" x="47" y="181" width="300" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-Mv-H7j">
@@ -64,8 +64,25 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="UtF-Kr-wXH">
+                                <rect key="frame" x="47" y="120" width="300" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1D"/>
+                                    <segment title="1W"/>
+                                    <segment title="1M"/>
+                                    <segment title="1Y"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price vs Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lx-0V-MsL">
+                                <rect key="frame" x="47" y="64" width="300" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPw-0s-dPE">
-                                <rect key="frame" x="178" y="452" width="38" height="21"/>
+                                <rect key="frame" x="178" y="439" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -86,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Queries-->
+        <!--Algorithm Strategy-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="QueriesViewController" customModule="Bit_Box" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,6 +128,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="queryname" destination="9oi-7a-cht" id="Wot-Xz-bgC"/>
                                     <segue destination="Csc-2V-L2N" kind="show" identifier="showDetail" id="QWb-UF-j4q"/>
@@ -118,7 +136,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Queries" id="MLk-TU-6wl"/>
+                    <navigationItem key="navigationItem" title="Algorithm Strategy" id="MLk-TU-6wl"/>
                     <connections>
                         <outlet property="table" destination="Tol-mb-dc1" id="3dw-wG-pBB"/>
                     </connections>
@@ -139,8 +157,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="EWW-a3-YWM">
+                                <rect key="frame" x="37" y="166" width="300" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1D"/>
+                                    <segment title="1W"/>
+                                    <segment title="1M"/>
+                                    <segment title="1Y"/>
+                                </segments>
+                                <color key="tintColor" red="0.96078431369999995" green="0.28710674660000002" blue="0.17791336620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mY8-X0-8fV" customClass="PredictionGraphView" customModule="Bit_Box" customModuleProvider="target">
-                                <rect key="frame" x="37" y="208" width="300" height="250"/>
+                                <rect key="frame" x="38" y="230" width="300" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGX-zg-aZa">
@@ -169,21 +198,21 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Query Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daL-3b-eBP">
-                                <rect key="frame" x="37" y="111" width="300" height="41"/>
+                                <rect key="frame" x="38" y="84" width="300" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnG-Ih-XtM">
-                                <rect key="frame" x="168" y="466" width="38" height="21"/>
+                                <rect key="frame" x="168" y="488" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Worth (USD)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYx-bu-b7b">
-                                <rect key="frame" x="-21" y="323" width="86" height="21"/>
+                                <rect key="frame" x="-20" y="345" width="86" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <nil key="textColor"/>

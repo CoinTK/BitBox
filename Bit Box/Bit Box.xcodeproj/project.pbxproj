@@ -45,7 +45,6 @@
 /* Begin PBXFileReference section */
 		CF6780A31E624450003335D0 /* Bit Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bit Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6780A61E624450003335D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF6780B41E624450003335D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6780B91E624450003335D0 /* Bit BoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit BoxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6780BD1E624450003335D0 /* Bit_BoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit_BoxTests.swift; sourceTree = "<group>"; };
 		CF6780C41E624451003335D0 /* Bit BoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit BoxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +115,6 @@
 			children = (
 				CF6780F11E6245AE003335D0 /* Resources */,
 				CF6780A61E624450003335D0 /* AppDelegate.swift */,
-				CF6780B41E624450003335D0 /* Info.plist */,
 				CF6780D61E624468003335D0 /* GraphView.swift */,
 				CF6780D81E62446C003335D0 /* GraphViewDelegate.swift */,
 				CF6780DA1E62446F003335D0 /* Info.plist */,
