@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftCharts
 
 class LiveController: UIViewController {
 
@@ -32,29 +33,53 @@ class LiveController: UIViewController {
         //Should redraw graphView
     }
     
-    func makeList(n:Int ) -> [Int] {
-        var result:[Int] = []
-        for _ in 0..<n {
-            result.append(Int(arc4random_uniform(20) + 1))
-        }
-        return result
-    }
 
     func getJson(url: String, timeFrame: Int) -> [[Int]]{
-        let size:Int = Int(arc4random_uniform(20) + 1)
-        let graphPoints:[[Int]] = [(makeList(n:size).sorted()), makeList(n: size)]
+        guard let url = URL(string: url) else
+        {
+            print("Url conversion issue.")
+            return []
+        }
+        // task
+        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
+            if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
+                if let related_topics_array = jsonObj?.value(forKey: "data") as? NSArray {
+                    for topic in related_topics_array {
+                        if let topicDict = topic as? NSDictionary {
+                            if let worth = topicDict.value(forKey: "worth") { // usernames
+                                self.firsturls.append(firsturl as! String)
+                            }
+                            if let text = topicDict.value(forKey: "Text") {
+                                self.texts.append(text as! String)
+                            }
+                            
+                            // get back to main thread before reloading
+                            OperationQueue.main.addOperation ({
+                                self.table.reloadData()
+                            })
+                        }
+                    }
+                }
+                
+                
+            }
+        }).resume()
+        
+        let graphPoints:[[Int]] = []
         return graphPoints
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        priceLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
-
-        selected.text = ""
-        let json:[[Int]] = getJson(url: "", timeFrame: 3)
-        graphView.graphPointsY = json[1]
-        graphView.graphPointsX = json[0]
-        setupGraphDisplay()
+//        priceLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+//
+//        selected.text = ""
+//        let json:[[Int]] = getJson(url: "", timeFrame: 3)
+//        graphView.graphPointsY = json[1]
+//        graphView.graphPointsX = json[0]
+//        setupGraphDisplay()
+        
+        
         
     }
     
@@ -64,13 +89,29 @@ class LiveController: UIViewController {
     }
 
     func setupGraphDisplay() {
-        maxPT.text = "\(graphView.graphPointsY.max()!)"
-            }
+        let chartConfig = ChartConfigXY(
+            xAxisConfig: ChartAxisConfig(from: 0, to: 14, by: 2),
+            yAxisConfig: ChartAxisConfig(from: 0, to: 14, by: 2)
+        )
+        
+        let chart = LineChart(
+            frame: CGRect(x: 47, y: 181, width: 300, height: 250),
+            chartConfig: chartConfig,
+            xTitle: "X axis",
+            yTitle: "Y axis",
+            lines: [
+                (chartPoints: [(2.0, 10.6), (4.2, 5.1), (7.3, 3.0), (8.1, 5.5), (14.0, 8.0)], color: UIColor.red),
+                (chartPoints: [(2.0, 2.6), (4.2, 4.1), (7.3, 1.0), (8.1, 11.5), (14.0, 3.0)], color: UIColor.blue)
+            ]
+        )
+        chart.view.backgroundColor = .green
+        self.view.addSubview(chart.view)
 
-}
-
-extension LiveController: GraphViewDelegate {
-    func getSelectedValue(string: String) {
-        self.selected.text = string
+        maxPT.text = "\(chartConfig.chartSettings.)"
+        
+        
+        
     }
+
 }
+
