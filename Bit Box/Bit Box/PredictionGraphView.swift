@@ -5,7 +5,6 @@
 //  Created by Ashwin Aggarwal on 2/24/17.
 //  Copyright © 2017 CoinTK. All rights reserved.
 //
-
 import UIKit
 
 
@@ -156,8 +155,7 @@ import UIKit
     
     //    func handleTap(_ recognizer:UITapGestureRecognizer) {
     //        self.delegate?.getSelectedValue(string: "\(graphPoints[i])")
-    //    
+    //
     //    }
-
     
 }

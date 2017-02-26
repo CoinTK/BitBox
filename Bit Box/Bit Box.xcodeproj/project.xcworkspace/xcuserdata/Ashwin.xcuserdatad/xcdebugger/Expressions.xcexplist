@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LiveController.drawTimeFrame(timeFrame : Int) -&gt; ():LiveController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "graphView.graphPointsX">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "QueriesDetailViewController.drawTimeFrame(timeFrame : Int) -&gt; ():QueriesDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "predictionGraphView.graphPointsX">
+            </PersistentString>
+            <PersistentString
+               value = "sentID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PredictionGraphView.(draw(CGRect) -&gt; ()).(closure #1):PredictionGraphView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.graphPointsX">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LiveController.setupGraphDisplay() -&gt; ():LiveController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "graphView">
+            </PersistentString>
+            <PersistentString
+               value = "graphView.graphPointsY.max()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LiveController.getJson(url : String, timeFrame : Int) -&gt; [[Int]]:LiveController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.graphView.graphPointsX">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LiveController.viewDidLoad() -&gt; ():LiveController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "graphView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

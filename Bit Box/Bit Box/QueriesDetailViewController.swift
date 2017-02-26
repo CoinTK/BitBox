@@ -14,36 +14,60 @@ class QueriesDetailViewController: UIViewController {
     @IBOutlet weak var query_name: UILabel!
     
     var sentName = String()
+    var sentID = Int()
     
     @IBOutlet weak var worthLabel: UILabel!
     
     @IBOutlet weak var maxWT: UILabel!
     
+    var first : Int = 0
+    var last : Int = 0
+    
+    var minY : Int = 0
+    
     @IBOutlet weak var predictionGraphView: PredictionGraphView!
-    @IBAction func selectedTimeFrame(_ sender: Any) {
-        drawTimeFrame(timeFrame:  TimeFrame.selectedSegmentIndex)
-    }
-    @IBOutlet weak var TimeFrame: UISegmentedControl!
     
-    func makeList(n:Int ) -> [Int] {
-        var result:[Int] = []
-        for _ in 0..<n {
-            result.append(Int(arc4random_uniform(20) + 1))
+    
+    func getJson(id: Int) -> [[Int]] {
+        let api = "http://52.41.80.130/api/backtests/results/trade?id=\(id)&page=0&page_size=1000"
+        let data: NSData = try! NSData(contentsOf: NSURL(string: api) as! URL);
+        if let jsonObj = try? JSONSerialization.jsonObject(with: data as Data, options: .allowFragments) as? NSDictionary {
+            if let data_array = jsonObj?.value(forKey: "data") as? NSArray {
+                for values in data_array {
+                    if let valueDict = values as? NSDictionary {
+                        if let worth = valueDict.value(forKey: "worth") { // usernames
+                            self.predictionGraphView.graphPointsY.append(worth as! Int)
+                        }
+                        if let timestamps = valueDict.value(forKey: "ts") {
+                            self.predictionGraphView.graphPointsX.append(timestamps as! Int)
+                        }
+                    }
+                }
+            }
+            first = jsonObj?.value(forKey: "first_ts") as! Int
+            last = jsonObj?.value(forKey: "last_ts") as! Int
+            
+            
         }
-        return result
-    }
-    
-    func getJson(url: String, timeFrame: Int, query_name: String) -> [[Int]]{
-        let size:Int = Int(arc4random_uniform(20) + 1)
-        let graphPoints:[[Int]] = [(makeList(n:size).sorted()), makeList(n: size)]
+        
+        let graphPoints:[[Int]] = [self.predictionGraphView.graphPointsX, self.predictionGraphView.graphPointsY]
         return graphPoints
     }
     
     func drawTimeFrame(timeFrame:Int) {
+        predictionGraphView.graphPointsY = []
+        predictionGraphView.graphPointsX = []
+        
+        getJson(id: sentID)
+        // stores timestamps as the x values
+        // makes all values in graphPointsX between [0, 1]
+        for i in 0..<predictionGraphView.graphPointsX.count {
+            predictionGraphView.graphPointsX[i] = (predictionGraphView.graphPointsX[i] - first)
+        }
         maxWT.text = "\(predictionGraphView.graphPointsY.max()!)"
-        let json:[[Int]] = getJson(url: "", timeFrame: timeFrame, query_name: self.sentName)
-        predictionGraphView.graphPointsY = json[1]
-        predictionGraphView.graphPointsX = json[0]
+        // sets the y values
+        minY = predictionGraphView.graphPointsY.min()!
+        
         predictionGraphView.contentMode = .redraw
         predictionGraphView.setNeedsDisplay()
         //Should redraw graphView
@@ -51,10 +75,8 @@ class QueriesDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let json:[[Int]] = getJson(url: "", timeFrame: 3, query_name: self.sentName)
-        predictionGraphView.graphPointsY = json[1]
-        predictionGraphView.graphPointsX = json[0]
-
+        drawTimeFrame(timeFrame: 3)
+        
         worthLabel.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         maxWT.text = "\(predictionGraphView.graphPointsY.max()!)"
 
@@ -69,6 +91,8 @@ class QueriesDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         query_name.text = sentName
     }
+    
+    
 
     
 
