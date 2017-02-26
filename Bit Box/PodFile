@@ -1,0 +1,6 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'Bit Box' do
+pod 'SwiftCharts', '~> 0.5'
+end

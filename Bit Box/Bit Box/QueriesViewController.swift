@@ -38,7 +38,7 @@ class QueriesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return names.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,6 +59,7 @@ class QueriesViewController: UITableViewController {
             let destination = segue.destination as? QueriesDetailViewController,
             let detailIndex = table.indexPathForSelectedRow?.row
         {
+            
             destination.sentName = names[detailIndex]
         }
     }

@@ -13,18 +13,24 @@ import UIKit
 @IBDesignable class PredictionGraphView: UIView {
     
     //Weekly sample data
-    var graphPoints:[Int] = [5, 2, 5, 10, 48]
-    // prediction api
-    let api = ""
+    var graphPointsY:[Int] = []
+    var graphPointsX:[Int] = []
     
-    //1 - the properties for the gradient
     @IBInspectable var startColor: UIColor = UIColor.red
     @IBInspectable var endColor: UIColor = UIColor.green
-    
+    var circles:[UIView] = []
     override func draw(_ rect: CGRect) {
-        getJson(url: api)
+        if circles.count > 0{
+            for i in 0..<circles.count{
+                circles[i].removeFromSuperview()
+            }
+        }
+        circles  = [UIView]()
+        
+        //1 - the properties for the gradient
         
         
+        let graphPath = UIBezierPath()
         let width = rect.width
         let height = rect.height
         
@@ -33,6 +39,7 @@ import UIKit
                                 byRoundingCorners: UIRectCorner.allCorners,
                                 cornerRadii: CGSize(width: 8.0, height: 8.0))
         path.addClip()
+        
         
         
         //2 - get the current context
@@ -59,12 +66,15 @@ import UIKit
                                     options: CGGradientDrawingOptions(rawValue: 0))
         //calculate the x point
         let margin:CGFloat = 20.0
-        let columnXPoint = { (column:Int) -> CGFloat in
+        
+        let columnXPoint = { (graphPoint:Int) -> CGFloat in
             //Calculate gap between points
-            let spacer = (width - margin*2 - 4) /
-                CGFloat((self.graphPoints.count - 1))
-            var x:CGFloat = CGFloat(column) * spacer
-            x += margin + 2
+            let maxValue = self.graphPointsX.max()
+            let graphWidth:CGFloat = (width - margin * 2 - 4)
+            var x:CGFloat = CGFloat(graphPoint) /
+                CGFloat(maxValue!) * graphWidth
+            x += margin
+            
             return x
         }
         
@@ -73,7 +83,7 @@ import UIKit
         let topBorder:CGFloat = 60
         let bottomBorder:CGFloat = 50
         let graphHeight = height - topBorder - bottomBorder
-        let maxValue = graphPoints.max()
+        let maxValue = graphPointsY.max()
         let columnYPoint = { (graphPoint:Int) -> CGFloat in
             var y:CGFloat = CGFloat(graphPoint) /
                 CGFloat(maxValue!) * graphHeight
@@ -87,50 +97,67 @@ import UIKit
         UIColor.white.setStroke()
         
         //set up the points line
-        let graphPath = UIBezierPath()
         //go to start of line
         graphPath.move(to:
-            CGPoint(x:columnXPoint(0),
-                    y:columnYPoint(graphPoints[0])))
+            CGPoint(x:columnXPoint(graphPointsX[0]),
+                    y:columnYPoint(graphPointsY[0])))
         
         //add points for each item in the graphPoints array
         //at the correct (x, y) for the point
-        for i in 1..<graphPoints.count {
-            let nextPoint = CGPoint(x:columnXPoint(i),
-                                    y:columnYPoint(graphPoints[i]))
+        for i in 1..<graphPointsX.count {
+            let nextPoint = CGPoint(x:columnXPoint(graphPointsX[i]),
+                                    y:columnYPoint(graphPointsY[i]))
             graphPath.addLine(to: nextPoint)
+            
+            
+            graphPath.stroke()
+            
+            //Draw horizontal graph lines on the top of everything
+            let linePath = UIBezierPath()
+            
+            //top line
+            linePath.move(to: CGPoint(x:margin, y: topBorder))
+            linePath.addLine(to: CGPoint(x: width - margin,
+                                         y:topBorder))
+            
+            //center line
+            linePath.move(to: CGPoint(x:margin,
+                                      y: graphHeight/2 + topBorder))
+            linePath.addLine(to: CGPoint(x:width - margin,
+                                         y:graphHeight/2 + topBorder))
+            
+            //bottom line
+            linePath.move(to: CGPoint(x:margin,
+                                      y:height - bottomBorder))
+            linePath.addLine(to: CGPoint(x:width - margin,
+                                         y:height - bottomBorder))
+            let color = UIColor(white: 1.0, alpha: 0.3)
+            color.setStroke()
+            
+            linePath.lineWidth = 1.0
+            linePath.stroke()
+        }
+        for i in 0..<graphPointsY.count {
+            var point = CGPoint(x:columnXPoint(graphPointsX[i]), y:columnYPoint(graphPointsY[i]))
+            
+            point.x -= 5.0/2
+            point.y -= 5.0/2
+            let circleView = UIView(frame: CGRect(origin: point, size: CGSize(width: 5.0, height: 5.0)))
+            //            let gesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+            //            circleView.addGestureRecognizer(gesture)
+            
+            circles.append(circleView)
+            //circle.fill()
+            circleView.backgroundColor = .white
+            self.addSubview(circleView)
         }
         
-        graphPath.stroke()
-        
-        //Draw horizontal graph lines on the top of everything
-        let linePath = UIBezierPath()
-        
-        //top line
-        linePath.move(to: CGPoint(x:margin, y: topBorder))
-        linePath.addLine(to: CGPoint(x: width - margin,
-                                     y:topBorder))
-        
-        //center line
-        linePath.move(to: CGPoint(x:margin,
-                                  y: graphHeight/2 + topBorder))
-        linePath.addLine(to: CGPoint(x:width - margin,
-                                     y:graphHeight/2 + topBorder))
-        
-        //bottom line
-        linePath.move(to: CGPoint(x:margin,
-                                  y:height - bottomBorder))
-        linePath.addLine(to: CGPoint(x:width - margin,
-                                     y:height - bottomBorder))
-        let color = UIColor(white: 1.0, alpha: 0.3)
-        color.setStroke()
-        
-        linePath.lineWidth = 1.0
-        linePath.stroke()
     }
-    // prediction api
-    func getJson(url: String) {
-        
-    }
+    
+    //    func handleTap(_ recognizer:UITapGestureRecognizer) {
+    //        self.delegate?.getSelectedValue(string: "\(graphPoints[i])")
+    //    
+    //    }
+
     
 }

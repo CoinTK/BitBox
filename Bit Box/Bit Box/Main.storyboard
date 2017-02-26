@@ -73,6 +73,9 @@
                                     <segment title="1M"/>
                                     <segment title="1Y"/>
                                 </segments>
+                                <connections>
+                                    <action selector="timeChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="bHW-TF-fDU"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price vs Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lx-0V-MsL">
                                 <rect key="frame" x="47" y="64" width="300" height="48"/>
@@ -93,6 +96,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Live" image="linechart.png" selectedImage="linechart.png" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="SegmentedControler" destination="UtF-Kr-wXH" id="VI8-jo-HEl"/>
                         <outlet property="graphView" destination="LUM-Wa-5Xs" id="Pnm-eU-uVi"/>
                         <outlet property="maxPT" destination="Pn2-Mv-H7j" id="IHb-iF-f3h"/>
                         <outlet property="priceLabel" destination="Ekj-JH-WEK" id="Rfh-Jn-AWz"/>
@@ -116,7 +120,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lqh-bz-cfG" id="vtg-N4-jw1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Query" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oi-7a-cht">
@@ -167,6 +171,9 @@
                                     <segment title="1Y"/>
                                 </segments>
                                 <color key="tintColor" red="0.96078431369999995" green="0.28710674660000002" blue="0.17791336620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="selectedTimeFrame:" destination="Csc-2V-L2N" eventType="valueChanged" id="Ups-v3-cqb"/>
+                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mY8-X0-8fV" customClass="PredictionGraphView" customModule="Bit_Box" customModuleProvider="target">
                                 <rect key="frame" x="38" y="230" width="300" height="250"/>
@@ -222,6 +229,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="TimeFrame" destination="EWW-a3-YWM" id="FIJ-q0-vrQ"/>
                         <outlet property="maxWT" destination="WGX-zg-aZa" id="D5I-BN-Y7U"/>
                         <outlet property="predictionGraphView" destination="mY8-X0-8fV" id="d9N-GN-0C5"/>
                         <outlet property="query_name" destination="daL-3b-eBP" id="JWa-TU-5u4"/>

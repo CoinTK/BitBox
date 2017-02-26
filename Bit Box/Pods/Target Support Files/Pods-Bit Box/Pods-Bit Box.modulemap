@@ -1,0 +1,6 @@
+framework module Pods_Bit_Box {
+  umbrella header "Pods-Bit Box-umbrella.h"
+
+  export *
+  module * { export * }
+}
