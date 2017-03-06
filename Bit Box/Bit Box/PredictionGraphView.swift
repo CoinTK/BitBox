@@ -14,7 +14,7 @@ import UIKit
     //Weekly sample data
     var graphPointsY:[Int] = []
     var graphPointsX:[Int] = []
-    
+    // allows editing from main.storyboard
     @IBInspectable var startColor: UIColor = UIColor.red
     @IBInspectable var endColor: UIColor = UIColor.green
     var circles:[UIView] = []

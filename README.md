@@ -16,10 +16,6 @@ The App is fully functional and should compile on most systems without issues. T
 BitBox keeps humans in the loop by providing them with the analysis and visualizations they need to make informed decisions about the trading algorithms they use.
 
 
-The app is functional and should compile on most systems without issues.
-
-
-
 
 <img src='https://github.com/CoinTK/BitBox/blob/master/screenshot1.png' width='400'>
 <img src='https://github.com/CoinTK/BitBox/blob/master/screenshot2.png' width='400'>

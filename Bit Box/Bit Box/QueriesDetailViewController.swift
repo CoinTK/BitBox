@@ -3,14 +3,12 @@
 //  BitBox
 //
 //  Created by Ashwin Aggarwal on 2/25/17.
-//  Copyright © 2017 CoinTK. All rights reserved.
-//
+
 
 import UIKit
 
 class QueriesDetailViewController: UIViewController {
 
-    
     @IBOutlet weak var query_name: UILabel!
     
     var sentName = String()
@@ -26,8 +24,7 @@ class QueriesDetailViewController: UIViewController {
     var minY : Int = 0
     
     @IBOutlet weak var predictionGraphView: PredictionGraphView!
-    
-    
+        
     func getJson(id: Int) -> [[Int]] {
         let api = "http://52.41.80.130/api/backtests/results/trade?id=\(id)&page=0&page_size=1000"
         let data: NSData = try! NSData(contentsOf: NSURL(string: api) as! URL);
@@ -58,7 +55,7 @@ class QueriesDetailViewController: UIViewController {
         predictionGraphView.graphPointsY = []
         predictionGraphView.graphPointsX = []
         
-        getJson(id: sentID)
+        var _ = getJson(id: sentID)
         // stores timestamps as the x values
         // makes all values in graphPointsX between [0, 1]
         for i in 0..<predictionGraphView.graphPointsX.count {

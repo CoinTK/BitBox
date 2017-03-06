@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF2498511E65110100888254 /* ErrorManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2498501E65110100888254 /* ErrorManagement.swift */; };
+		CF2498531E65165200888254 /* CurrentValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2498521E65165200888254 /* CurrentValueViewController.swift */; };
 		CF6780A71E624450003335D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6780A61E624450003335D0 /* AppDelegate.swift */; };
 		CF6780BE1E624450003335D0 /* Bit_BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6780BD1E624450003335D0 /* Bit_BoxTests.swift */; };
 		CF6780C91E624451003335D0 /* Bit_BoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6780C81E624451003335D0 /* Bit_BoxUITests.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF2498501E65110100888254 /* ErrorManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManagement.swift; sourceTree = "<group>"; };
+		CF2498521E65165200888254 /* CurrentValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentValueViewController.swift; sourceTree = "<group>"; };
 		CF6780A31E624450003335D0 /* Bit Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bit Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6780A61E624450003335D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF6780B91E624450003335D0 /* Bit BoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit BoxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,11 +115,13 @@
 				CF6780A61E624450003335D0 /* AppDelegate.swift */,
 				CF6780DA1E62446F003335D0 /* Info.plist */,
 				CF6780DE1E624476003335D0 /* Main.storyboard */,
+				CF2498521E65165200888254 /* CurrentValueViewController.swift */,
 				CF6780F61E624D52003335D0 /* LaunchScreen.storyboard */,
 				CF6780E61E624499003335D0 /* QueriesTableViewCell.swift */,
 				CF6780E01E624486003335D0 /* PredictionGraphView.swift */,
 				CF6780E41E624494003335D0 /* QueriesViewController.swift */,
 				CF6780E21E62448B003335D0 /* QueriesDetailViewController.swift */,
+				CF2498501E65110100888254 /* ErrorManagement.swift */,
 				CF6780E81E6244B3003335D0 /* Assets.xcassets */,
 			);
 			path = "Bit Box";
@@ -215,6 +221,7 @@
 				TargetAttributes = {
 					CF6780A21E624450003335D0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 73649R3F49;
 						ProvisioningStyle = Automatic;
 					};
 					CF6780B81E624450003335D0 = {
@@ -285,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6780A71E624450003335D0 /* AppDelegate.swift in Sources */,
+				CF2498511E65110100888254 /* ErrorManagement.swift in Sources */,
 				CF6780E11E624486003335D0 /* PredictionGraphView.swift in Sources */,
 				CF6780E71E624499003335D0 /* QueriesTableViewCell.swift in Sources */,
+				CF2498531E65165200888254 /* CurrentValueViewController.swift in Sources */,
 				CF6780E51E624494003335D0 /* QueriesViewController.swift in Sources */,
 				CF6780E31E62448B003335D0 /* QueriesDetailViewController.swift in Sources */,
 			);
@@ -421,11 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 73649R3F49;
 				INFOPLIST_FILE = "Bit Box/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CoinTK.Bit-Box";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -433,11 +444,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 73649R3F49;
 				INFOPLIST_FILE = "Bit Box/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CoinTK.Bit-Box";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
