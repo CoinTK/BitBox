@@ -23,6 +23,8 @@ class QueriesDetailViewController: UIViewController {
     
     var minY : Int = 0
     
+    let shared = ErrorManagement.sharedInstance
+    
     @IBOutlet weak var predictionGraphView: PredictionGraphView!
         
     func getJson(id: Int) -> [[Int]] {
@@ -45,6 +47,9 @@ class QueriesDetailViewController: UIViewController {
             last = jsonObj?.value(forKey: "last_ts") as! Int
             
             
+        }else {
+            present(shared.showAlert(message: "Check your connection to WiFi!"), animated: true, completion: nil)
+
         }
         
         let graphPoints:[[Int]] = [self.predictionGraphView.graphPointsX, self.predictionGraphView.graphPointsY]
@@ -88,19 +93,5 @@ class QueriesDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         query_name.text = sentName
     }
-    
-    
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

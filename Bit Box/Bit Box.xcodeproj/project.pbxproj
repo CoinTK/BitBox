@@ -22,6 +22,11 @@
 		CF6780F31E6247BB003335D0 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6780F21E6247BB003335D0 /* list.png */; };
 		CF6780F51E624B52003335D0 /* linechart.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6780F41E624B52003335D0 /* linechart.png */; };
 		CF6780F71E624D52003335D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6780F61E624D52003335D0 /* LaunchScreen.storyboard */; };
+		CFE064681E7EE6E600CACC74 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE064671E7EE6E600CACC74 /* InfoViewController.swift */; };
+		CFE0646B1E7EE9C300CACC74 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE064691E7EE9C300CACC74 /* GraphView.swift */; };
+		CFE0646C1E7EE9C300CACC74 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE0646A1E7EE9C300CACC74 /* cancel.png */; };
+		CFE0646E1E7EEA0A00CACC74 /* LiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE0646D1E7EEA0A00CACC74 /* LiveController.swift */; };
+		CFE064701E7EEA9600CACC74 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE0646F1E7EEA9600CACC74 /* earth.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		CF6780F21E6247BB003335D0 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		CF6780F41E624B52003335D0 /* linechart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linechart.png; sourceTree = "<group>"; };
 		CF6780F61E624D52003335D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFE064671E7EE6E600CACC74 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		CFE064691E7EE9C300CACC74 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		CFE0646A1E7EE9C300CACC74 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		CFE0646D1E7EEA0A00CACC74 /* LiveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveController.swift; sourceTree = "<group>"; };
+		CFE0646F1E7EEA9600CACC74 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,9 @@
 				CF6780A61E624450003335D0 /* AppDelegate.swift */,
 				CF6780DA1E62446F003335D0 /* Info.plist */,
 				CF6780DE1E624476003335D0 /* Main.storyboard */,
+				CFE064691E7EE9C300CACC74 /* GraphView.swift */,
+				CFE0646D1E7EEA0A00CACC74 /* LiveController.swift */,
+				CFE064671E7EE6E600CACC74 /* InfoViewController.swift */,
 				CF2498521E65165200888254 /* CurrentValueViewController.swift */,
 				CF6780F61E624D52003335D0 /* LaunchScreen.storyboard */,
 				CF6780E61E624499003335D0 /* QueriesTableViewCell.swift */,
@@ -149,6 +162,8 @@
 			children = (
 				CF6780F21E6247BB003335D0 /* list.png */,
 				CF6780F41E624B52003335D0 /* linechart.png */,
+				CFE0646F1E7EEA9600CACC74 /* earth.png */,
+				CFE0646A1E7EE9C300CACC74 /* cancel.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -261,11 +276,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE064701E7EEA9600CACC74 /* earth.png in Resources */,
 				CF6780F51E624B52003335D0 /* linechart.png in Resources */,
 				CF6780DB1E62446F003335D0 /* Info.plist in Resources */,
 				CF6780F31E6247BB003335D0 /* list.png in Resources */,
 				CF6780F71E624D52003335D0 /* LaunchScreen.storyboard in Resources */,
 				CF6780DF1E624476003335D0 /* Main.storyboard in Resources */,
+				CFE0646C1E7EE9C300CACC74 /* cancel.png in Resources */,
 				CF6780E91E6244B3003335D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,11 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6780A71E624450003335D0 /* AppDelegate.swift in Sources */,
+				CFE0646E1E7EEA0A00CACC74 /* LiveController.swift in Sources */,
 				CF2498511E65110100888254 /* ErrorManagement.swift in Sources */,
+				CFE0646B1E7EE9C300CACC74 /* GraphView.swift in Sources */,
 				CF6780E11E624486003335D0 /* PredictionGraphView.swift in Sources */,
 				CF6780E71E624499003335D0 /* QueriesTableViewCell.swift in Sources */,
 				CF2498531E65165200888254 /* CurrentValueViewController.swift in Sources */,
 				CF6780E51E624494003335D0 /* QueriesViewController.swift in Sources */,
+				CFE064681E7EE6E600CACC74 /* InfoViewController.swift in Sources */,
 				CF6780E31E62448B003335D0 /* QueriesDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

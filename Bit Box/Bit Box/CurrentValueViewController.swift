@@ -10,6 +10,8 @@ import UIKit
 
 class CurrentValueViewController: UIViewController {
 
+    let current_api = "http://52.41.80.130/api/live/bitcoin_current"
+    
     @IBOutlet weak var value_label: UILabel!
     
     @IBOutlet weak var currency: UILabel!
@@ -18,8 +20,8 @@ class CurrentValueViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
