@@ -90,9 +90,3 @@ class LiveController: UIViewController {
     }
  
 }
-
-extension LiveController: GraphViewDelegate {
-    func getSelectedValue(string: String) {
-        self.selected.text = string
-    }
-}
